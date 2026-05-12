@@ -7,7 +7,11 @@ if (!supabaseUrl || !supabaseAnonKey) {
   console.warn("Supabase credentials missing. Integration will be disabled.");
 }
 
-export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+// Defensive initialization to prevent build-time crashes
+export const supabase = createClient(
+  supabaseUrl || "https://placeholder.supabase.co", 
+  supabaseAnonKey || "placeholder"
+);
 
 /**
  * Database Types (Matching schema.sql)
