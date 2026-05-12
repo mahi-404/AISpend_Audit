@@ -29,3 +29,9 @@ The platform has been transitioned from a simple cost calculator to a comprehens
 - Implement real-time provider API integrations to verify seat usage automatically.
 - Expand market benchmarks with industry-specific data (e.g. Fintech vs. Healthtech AI spend).
 - Add "Team Seat Right-Sizing" simulation tool.
+
+## DevOps & Repository Standards
+- **Production-Grade Infrastructure**: Configured GitHub Actions CI for automated quality assurance (Type checking, Linting, Testing).
+- **Security Protocols**: Implemented robust `.gitignore` and `.env.example` templates to prevent credential leaks.
+- **Documentation Excellence**: Established a 13-file documentation suite (`METRICS.md`, `ARCHITECTURE.md`, `GTM.md`, etc.) to provide 360-degree project transparency.
+- **Git Flow**: Transitioned to Conventional Commits and a `main`-branch standard for professional team collaboration.
